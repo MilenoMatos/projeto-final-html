@@ -87,6 +87,7 @@
         list-style: none;
         display: flex;
         justify-content: space-evenly;
+        border-radius: 60rem;
     }
     
     .passos {
@@ -95,4 +96,8 @@
     
     p {
         color: white;
+    }
+    
+    #imagediv {
+        margin-top: 5em;
     }
