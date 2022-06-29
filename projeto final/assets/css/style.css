@@ -14,6 +14,7 @@
         width: 100%;
         background-size: cover;
         background-position: center;
+        width: 100%;
     }
     
     nav {
@@ -108,4 +109,9 @@
         list-style: none;
         color: white;
         text-align: center;
+        margin-bottom: 3em;
+    }
+    
+    #tituloSimulator {
+        margin-bottom: 1em;
     }
