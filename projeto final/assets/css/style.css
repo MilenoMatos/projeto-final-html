@@ -46,3 +46,11 @@
         color: #ea1538;
         transition: .3s;
     }
+    
+    button {
+        border: none;
+        background: #ea1538;
+        padding: 12px 30px;
+        border-radius: 30px;
+        color: white;
+    }
