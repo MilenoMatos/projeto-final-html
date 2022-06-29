@@ -23,7 +23,6 @@
     
     .logo {
         color: white;
-        font-size: 36px;
     }
     
     span {
@@ -63,4 +62,8 @@
     button:hover {
         transform: scale(1.3);
         cursor: pointer;
+    }
+    
+    a {
+        font-size: 20px;
     }
