@@ -123,7 +123,46 @@
                     </li>
                 </ul>
             </div>
+            <p>Vertices: Quatro vértices piramihados, que são as pontas do tetraedro. Os vértices giram sobre si mesmos livremente, mas não trocam sua posição com nenhuma outra peça. Eles estão sempre lá, nas esquinas. Os vértices têm três adesivos. Centros:
+                Quatro peças centrais localizadas imediatamente abaixo de cada um dos vértices. Eles podem girar, mas não podem trocar suas posições com outros peças. Eles têm três adesivos. Cada uma dessas peças, juntamente com seu ápice, forma o que
+                chamaremos de "bloco". Se você olhar para um rosto da pirâmide, verá que ela tem três desses blocos: o superior (correspondente ao vértice que olha para cima), a esquerda e a direita. Esses três blocos compartilham bordas. Bordas: Seis
+                bordas. Os outros peças estão localizados no centro de cada lado. Eles têm dois adesivos e podem trocar posições no Pyraminx.</p>
+
+
+            <p>Passo 1: Classificar vértices Assim que tivermos nosso pyraminx desmontado, o primeiro passo que seguiremos será rodar os vértices para que suas cores combinem com as cores do peças que estão imediatamente abaixo, os centros. Como já indicamos
+                acima, esta peça gira sobre si mesma, mas não troca sua posição com outros peças. A mesma coisa acontece com os vértices.</p>
+
+            <p>Passo 2: Coloque vértices e centros Nesta etapa vamos tentar colocar os centros da mesma cor em um rosto. Concentre-se em uma cor ou rosto para começar. Vamos fazer isso no lado amarelo. Primeiro lugar todos os vértices amarelos, juntamente
+                com seu centro no mesmo rosto, como mostrado na imagem. Tenha em mente que esses blocos têm sua posição correta, ou seja, que as cores amarelo-azul e amarelo-vermelho combinam cada um em seu rosto. Você pode vê-lo mais claramente na imagem.
+                Se não fizermos assim, mesmo que o rosto amarelo seja construído, não será certo e você não será capaz de continuar. Para executar esta etapa não há algoritmo específico. Gire os blocos de sua pyraminx até obtê-lo.</p>
+
+            <p>Procuramos uma borda que tenha amarelo e coloque-a sob o lugar onde queremos que ele vá. Este lugar deve ficar na nossa frente (na imagem que é representada em cinza para que você possa ver a posição que deveria ter). Deixamos a borda amarela
+                de frente para nós.</p>
+
+            <p>Se a peça amarela estiver à direita, aplicamos o seguinte algoritmo: B R' B' R Se, por outro lado, é à nossa esquerda, aplicamos o seguinte algoritmo: B' L B L' Finalmente, se ele permanecer em sua posição, mas giramos aplicamos o seguinte
+                algoritmo: R' B' R B' L' L' L' L' Também pode ser o caso de ser colocado na face amarela, mas está ocupando o espaço de outra peça. Para resolvê-la, devemos tirar a peça aplicando, com a borda que vamos mudar olhando um para o outro pela
+                frente (como se fosse a peça cinza que temos no desenho) qualquer um dos dois primeiros algoritmos. Com isso, o que faremos é incorporar o pedaço da nossa direita (se aplicarmos o algoritmo da direita) ou da nossa esquerda (se aplicarmos
+                o outro) nessa posição. Portanto, nossa peça sairá do lugar e podemos colocá-la onde ela vai com um desses algoritmos novamente.
+            </p>
+
+            <p>Passo 4: Coloque as últimas bordas Este é o último passo que vamos dar. Agora nós colocamos em sua posição correta o último conjunto de vértice + centro. De modo que todos os centros vermelho, verde e azul estão no rosto correspondente e na
+                face amarela abaixo, como vemos na imagem a seguir. Uma vez feito isso teremos 3 casos possíveis. Primeiro caso: todas as arestas são trocadas. Quando encontramos este caso, devemos observar uma peça que está errada (não importa o que
+                seja) e ver se sua posição correta é à sua direita ou à esquerda. Se estiver à sua direita, aplicaremos o seguinte algoritmo: L U L' U L U L'</p>
+
+            <p>Pelo contrário, se estiver à sua esquerda, aplicamos o seguinte algoritmo: L U' L' L' L' L' L' L</p>
+
+            <p>Repetiremos o algoritmo quantas vezes for necessário até que todos os peças sejam colocados em sua posição correta, mesmo que sejam girados.</p>
+
+            <p>Segundo caso: este caso pode sair diretamente depois de colocar as bordas amarelas no lugar, ou será o próximo passo após a realização do caso 1. Desta vez temos todas as bordas no lugar, uma em sua posição correta e as outras duas equivocadas.
+                Para orientar as duas bordas que nos restam, usaremos o seguinte algoritmo com os dois peças que estão desorientados frente a frente: L R' L' R (giramos o cubo no eixo Z) L' R R'</p>
+
+            <p>Um bom método para lembrar esse conjunto de algoritmos é: baixo, baixo, eu vou para cima, eu vou para cima (quebrado) e eu vou para cima, eu vou para cima, baixo, baixo Terceiro caso: se chegamos aqui diretamente, ou se chegamos depois de
+                fazer o caso 1 e/ou caso 2, este caso é o pyraminx já resolvido.</p>
+
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/mVzwlxS-IsQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
+
     </main>
 
 </body>
