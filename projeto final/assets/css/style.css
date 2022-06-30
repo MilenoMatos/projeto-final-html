@@ -135,7 +135,7 @@
     }
     
     #ultmcontato {
-        margin-bottom: 32em;
+        margin-bottom: 32.43em;
     }
     
     .titulo-index {
@@ -147,4 +147,8 @@
     
     a {
         text-decoration: none
+    }
+    
+    .textCurioso {
+        margin-bottom: 19.57em;
     }
