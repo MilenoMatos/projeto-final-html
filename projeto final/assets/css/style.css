@@ -17,7 +17,7 @@
         width: 100%;
     }
     
-    nav {
+    header, nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -151,4 +151,44 @@
     
     .textCurioso {
         margin-bottom: 19.57em;
+    }
+
+    .icon {
+        float: right;
+        line-height: 60px;
+        font-size: 25px;
+        cursor: pointer;
+        display: none;
+    }
+
+    @media (max-width: 600px) {
+        header {
+            padding: 0 20px;
+            
+        }
+
+        .icon{
+            display: block;
+        }
+
+        nav {
+            position: absolute;
+            width: 100%;
+            height: calc(100vh - 50px);
+            top: 50px;
+            left: -100%;
+            background: #00ff2a;
+            transition: .4s;
+        }
+        
+        nav ul {
+            display: block;
+            text-align: center;
+
+        }
+
+        nav ul li {
+            border-bottom: 1px dotted #fff;
+        }
+
     }
