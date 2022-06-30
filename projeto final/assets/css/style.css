@@ -125,7 +125,9 @@
     }
     
     #criador {
-        color: #ea1538;
+        color: white;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(90deg, rgba(0, 0, 0, 1) 5%, rgba(89, 10, 23, 1) 20%, rgba(148, 17, 38, 1) 40%, rgba(234, 21, 56, 1) 50%, rgba(148, 17, 38, 1) 60%, rgba(79, 9, 20, 1) 80%, rgba(0, 0, 0, 1) 95%);
     }
     
     .ultimg {
@@ -141,4 +143,8 @@
         color: white;
         font-size: 2rem;
         margin-top: 2em;
+    }
+    
+    a {
+        text-decoration: none
     }
