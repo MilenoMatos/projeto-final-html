@@ -77,7 +77,6 @@
     
     textarea {
         font-weight: bold;
-        color: blue;
     }
     
     p {
@@ -93,10 +92,6 @@
     
     .passos {
         text-align: center;
-    }
-    
-    p {
-        color: white;
     }
     
     #imagediv {
@@ -139,4 +134,11 @@
     
     #ultmcontato {
         margin-bottom: 32em;
+    }
+    
+    .titulo-index {
+        text-align: center;
+        color: white;
+        font-size: 2rem;
+        margin-top: 2em;
     }
