@@ -152,17 +152,18 @@
     .textCurioso {
         margin-bottom: 19.57em;
     }
-
-    #alert-success, #alert-fail{
+    
+    #alert-success,
+    #alert-fail {
         display: none;
     }
-
-    #esteregg{
+    
+    #esteregg {
         font-size: 1em;
         color: black;
     }
-
+    
     #esteregg_div {
-        color: rgb(105, 0, 0);
+        color: #ea1538;
         display: none;
     }
