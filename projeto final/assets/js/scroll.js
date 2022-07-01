@@ -1,4 +1,4 @@
-const menuLinks = document.querySelectorAll('.menu a[href^="#"]');
+const menuLinks = document.querySelectorAll('.suaveScroll a[href^="#"]');
 
 function getDistanceFromTheTop(element) {
     const id = element.getAttribute("href");
@@ -8,7 +8,7 @@ function getDistanceFromTheTop(element) {
 function scrollToSection(event) {
     event.preventDefault();
     const distanceFromTheTop = getDistanceFromTheTop(event.target) - 90;
-    smoothScrollTo(0, distanceFromTheTop, 1500);
+    smoothScrollTo(0, distanceFromTheTop, 3000);
 }
 
 menuLinks.forEach((link) => {

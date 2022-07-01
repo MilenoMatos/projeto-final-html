@@ -167,3 +167,8 @@
         color: #ea1538;
         display: none;
     }
+    /*
+    html{
+        scroll-behavior: smooth;
+    }
+    */
