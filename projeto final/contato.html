@@ -30,10 +30,20 @@
                 <a href="contato.html"><button type="button">Duvida/Contato</button></a>
             </nav>
 
-            <form class="mt-5 container" id="ultmcontato">
+
+            <div class="alert alert-success alert-dismissible fade show mostrar-alert" role="alert" id="alert-success">
+                Cadastro realizado com sucesso!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <div class="alert alert-danger alert-dismissible fade show mostrar-alert" role="alert" id="alert-fail">
+                <strong>Cadastro não realizado!</strong> Preencha os campos.
+                <button type="button" class="btn-close" aria-label="Close"></button>
+            </div>
+
+            <form class="mt-5 container form-cadostro" id="ultmcontato">
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Email</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Insira seu email">
+                    <input type="text" class="form-control" id="email" placeholder="Insira seu email">
                 </div>
 
                 <div class="form-group">
@@ -52,6 +62,12 @@
             </div>
         </div>
     </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="assets/js/cadastra-email.js"></script>
+
 </body>
 
 </html>
