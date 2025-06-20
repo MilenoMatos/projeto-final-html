@@ -4,7 +4,7 @@ function getDistanceFromTheTop(element) {
     const id = element.getAttribute("href");
     return document.querySelector(id).offsetTop;
 }
---
+
 function scrollToSection(event) {
     event.preventDefault();
     const distanceFromTheTop = getDistanceFromTheTop(event.target) - 90;
